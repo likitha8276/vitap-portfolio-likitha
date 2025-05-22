@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Hi, I'm Likitha — B.Tech Student & Aspiring MERN Developer</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Ancizar+Serif:ital,wght@0,300..900;1,300..900&family=Archivo+Black&display=swap');
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      html, body {
+        height: 100%;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background-image: url('/vitapportofolio/images/resume-checklist-next-to-laptop.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        color: #fff;
+      }
+
+      body {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+      }
+
+      .content-box {
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(0, 0, 0, 0.65);
+        border-radius: 16px;
+        padding: 1.5rem 2.5rem;
+        max-width: 900px;
+        width: 90%;
+        margin: auto;
+        text-align: center;
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+        min-height: 420px;
+      }
+
+      .content-box h1,
+      .content-box h2,
+      .content-box p {
+        animation: text-pop 0.7s ease forwards;
+        opacity: 0;
+      }
+
+      .content-box h1 {
+        font-family: 'Archivo Black', sans-serif;
+        font-size: 2.75rem;
+        margin-bottom: 0.3rem;
+        animation-delay: 0s;
+      }
+
+      .content-box h2 {
+        font-family: 'Ancizar Serif', serif;
+        font-style: italic;
+        font-size: 1.5rem;
+        font-weight: 400;
+        margin-bottom: 0.1rem;
+        color: #e0e0e0;
+        animation-delay: 0.3s;
+      }
+
+      .content-box p:nth-of-type(1) {
+        font-size: 1.2rem;
+        line-height: 1.7;
+        margin-bottom: 1.2rem;
+        color: #fefefe;
+        animation-delay: 0.6s;
+      }
+
+      .content-box p:nth-of-type(2) {
+        font-size: 1.2rem;
+        line-height: 1.7;
+        margin-bottom: 1.2rem;
+        color: #fefefe;
+        animation-delay: 0.9s;
+      }
+
+      @keyframes text-pop {
+        0% {
+          transform: scale(0.8);
+          opacity: 0;
+        }
+        100% {
+          transform: scale(1);
+          opacity: 1;
+        }
+      }
+
+      .content-box a {
+        color: #f0c040;
+        font-weight: 600;
+        text-decoration: underline;
+        transition: color 0.3s ease;
+      }
+
+      .content-box a:hover {
+        color: #ffd966;
+      }
+
+      footer {
+        background-color: #000;
+        text-align: center;
+        padding: 1.2rem;
+        font-size: 0.9rem;
+        color: #ccc;
+      }
+
+      footer a {
+        color: #ddd;
+        text-decoration: none;
+      }
+
+      footer a:hover {
+        color: #fff;
+      }
+
+      footer ul {
+        list-style: none;
+        padding: 0;
+        margin: 0.6rem 0 0;
+        display: flex;
+        justify-content: center;
+        gap: 1.5rem;
+      }
+
+      footer li {
+        display: inline;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="content-box">
+      <h1>Likitha</h1>
+      <h2>B.Tech Student & Aspiring MERN Developer</h2>
+      <p>
+        Hi! I'm Likitha, a curious and passionate 3rd-year B.Tech student at VIT-AP University. I’m on a mission to master the MERN stack and love building clean, user-friendly web apps that solve real problems.
+      </p>
+      <p>
+        Want to check out what I’ve worked on or learn more about my journey? Take a look at my <a href="resume.html">resume</a>. Thanks so much for stopping by — I really appreciate it!
+      </p>
+    </div>
+
+    <footer>
+      <p>
+        © 2023 Chirreddy Likitha | <a href="mailto:develop.likitha@gmail.com">develop.likitha@gmail.com</a>
+      </p>
+      <ul>
+        <li>
+          <a href="https://www.linkedin.com/in/likitha-chirreddy-a0ab8928b" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-linkedin"></i> LinkedIn
+          </a>
+        </li>
+        <li>
+          <a href="https://codepen.io/likitha8276" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-codepen"></i> CodePen
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/likitha8276" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-github"></i> GitHub
+          </a>
+        </li>
+      </ul>
+    </footer>
+  </body>
+</html>

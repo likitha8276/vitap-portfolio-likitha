@@ -1,0 +1,211 @@
+:root {
+  --primary-color: #222;
+  --secondary-color: #fff;
+  --accent-color: #f3f3f3;
+  --link-color: #0077cc;
+  --hover-color: #333;
+  --text-color: #333;
+  --border-color: #ddd;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Ancizar+Serif:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Allan:wght@400;700&family=Ancizar+Serif:ital,wght@0,300..900;1,300..900&family=Archivo+Black&family=Boogaloo&family=Unbounded:wght@200..900&family=Viaoda+Libre&display=swap');
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: 'Ancizar Serif', serif;
+  font-size: 1.6rem;
+  line-height: 1.6;
+  margin: 0;
+  background-color: #050503;
+  background-image: url("https://www.transparenttextures.com/patterns/45-degree-fabric-light.png");
+  color: var(--text-color);
+}
+
+a {
+  color: var(--link-color);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--hover-color);
+}
+
+.content-wrapper {
+  width: 100%;
+  padding: 40px 60px;
+  box-sizing: border-box;
+}
+
+h1, h2, h3 {
+  font-family: 'Ancizar Serif', serif;
+  font-weight: 500;
+  margin-bottom: 10px;
+  margin-top: 0;
+}
+
+h1 {
+  font-size: 5.5rem;
+  color: #f5f0e1;
+  font-family: 'Viaoda Libre', serif;
+}
+
+h2 {
+  font-size: 3.2rem;
+}
+
+.tagline {
+  font-size: 3.2rem;
+  font-family: 'Archivo Black', sans-serif;
+  color: #f5f0e1;
+}
+
+h3 {
+  font-size: 2.4rem;
+}
+
+@keyframes swing-in-top-bck {
+  0% {
+    transform: rotateX(70deg);
+    transform-origin: top;
+    opacity: 0;
+  }
+  100% {
+    transform: rotateX(0deg);
+    transform-origin: top;
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in-up {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.resume-section,
+.project-item,
+.education-item {
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+  margin-bottom: 20px;
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  animation: swing-in-top-bck 0.6s cubic-bezier(.175, .885, .32, 1.275) both;
+}
+
+.resume-section > *,
+.project-item > *,
+.education-item > * {
+  opacity: 0;
+  animation: fade-in-up 0.6s ease forwards;
+  animation-delay: 0.6s;
+}
+
+.project-item img {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 6px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.project-item p {
+  margin: 10px 0;
+}
+
+.club-item {
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.certificates-list li {
+  margin-bottom: 10px;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 15px;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 1.4rem;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: var(--hover-color);
+}
+
+.download-bottom-wrapper {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+@media (max-width: 768px) {
+  .project-item {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+footer {
+  background-color: #111;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+footer p {
+  margin: 0;
+  font-size: 16px;
+}
+
+footer a {
+  color: #ccc;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #fff;
+}
+
+footer .socials {
+  list-style: none;
+  padding: 10px 0 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+footer .socials li {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
