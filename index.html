@@ -22,7 +22,7 @@
       html, body {
         height: 100%;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        background-image: url('/vitapportofolio/images/resume-checklist-next-to-laptop.jpg');
+        background-image: url('images/resume-checklist-next-to-laptop.jpg');
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
@@ -76,19 +76,19 @@
         animation-delay: 0.3s;
       }
 
-      .content-box p:nth-of-type(1) {
-        font-size: 1.2rem;
-        line-height: 1.7;
-        margin-bottom: 1.2rem;
-        color: #fefefe;
-        animation-delay: 0.6s;
-      }
-
+      .content-box p:nth-of-type(1),
       .content-box p:nth-of-type(2) {
         font-size: 1.2rem;
         line-height: 1.7;
         margin-bottom: 1.2rem;
         color: #fefefe;
+      }
+
+      .content-box p:nth-of-type(1) {
+        animation-delay: 0.6s;
+      }
+
+      .content-box p:nth-of-type(2) {
         animation-delay: 0.9s;
       }
 
@@ -182,3 +182,4 @@
     </footer>
   </body>
 </html>
+
